@@ -29,7 +29,7 @@ class WhatsappBot {
   static async googleSearch(req, res, next) {
     const twiml = new MessagingResponse();
     const q = req.body.Body;
-    console.log(q)
+    
     const options = { cx, q, auth: googleApiKey };
 
     try {
