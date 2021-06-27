@@ -1,7 +1,9 @@
 import { Router } from 'express';
 import botRouter from './search';
+import pingRouter from './ping';
 
 const v1Router = Router();
+v1Router.use('/ping', pingRouter)
 v1Router.use('/api/v1', botRouter);
 
 export default v1Router;

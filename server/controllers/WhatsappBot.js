@@ -27,10 +27,6 @@ class WhatsappBot {
    * @returns {object} - object representing response message
    */
 
-  static ping(req, res, next) {
-    res.status(200).send('Pong...')
-  }
-
   static async googleSearch(req, res, next) {
     const twiml = new MessagingResponse();
     const q = req.body.Body;
